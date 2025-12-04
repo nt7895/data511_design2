@@ -224,7 +224,7 @@ else:
             "%{customdata[2]}<br>" +
             "Year: %{x}<br>" +
             "Ratio: x%{y:.2f}<br>" +
-            "Median Income: $%{customdata[0]:.0f}<br>" +
+            "Median Household Income: $%{customdata[0]:.0f}<br>" +
             "Median Sale Price: $%{customdata[1]:.0f}<extra></extra>"
     )
 
