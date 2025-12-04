@@ -248,7 +248,7 @@ else:
 
     with col2:
         with st.container(border=True):
-            st.plotly_chart(price_income_fig, use_container_width=True)
+            st.plotly_chart(price_income_fig)
 
 
 
