@@ -24,4 +24,6 @@ st.markdown("""
     #### Price-to-Income Ratio Levels
     Cox, Wendell (2025). *Demographia International Housing Affordability, 2025 Edition*. Center for Demographics and Policy. https://www.chapman.edu/communication/_files/Demographia-International-Housing-Affordability-2025-Edition.pdf
 
+    #### 2019 to 2023 Median U.S. Household Size
+    U.S. Census Bureau. (2023). 2019—2023 ACS 5-Year Narrative Profile. Retrieved December 4, 2025, from https://www.census.gov/acs/www/data/data-tables-and-tools/narrative-profiles/2023/report.php?geotype=nation&usVal=us&utm
     """)
