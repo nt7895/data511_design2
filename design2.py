@@ -19,14 +19,17 @@ def load_data():
     df = df.fillna(0)
 
     # Price to Income Data Preparation
-    df["Price_Income_Ratio"] = df["median_sale_price"] / (2.51 * df["Per Capita Income"])
+    df["Household Income"] = 2.51 * df["Per Capita Income"]
+    df["Price_Income_Ratio"] = df["median_sale_price"] / (2.51 * df["Household Income"])
+
+    
     
     ratio_agg = (
         df.groupby(["city_full", "year"], as_index=False)
         .agg({
             "Price_Income_Ratio": "median",
             "median_sale_price": "median",
-            "Per Capita Income": "median"
+            "Household Income": "median"
         })
     )
 
@@ -97,7 +100,7 @@ else:
 
     price_income = ratio_agg[ratio_agg["city_full"].isin(selected_cities)].copy()
 
-    customdata = price_income[["Per Capita Income", "median_sale_price", "Affordability"]].values
+    customdata = price_income[["Household Income", "median_sale_price", "Affordability"]].values
 
     colors = px.colors.qualitative.Plotly  
     color_map = {city: colors[i % len(colors)] for i, city in enumerate(selected_cities)}
