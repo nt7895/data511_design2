@@ -75,7 +75,7 @@ def reset_cities():
 
 col1, col2 = st.columns([1.5,5], vertical_alignment="top")
 with col1:
-    with st.container(border=True):
+    with st.container(border=True, height="content"):
         st.markdown("<h2 style='font-size: 24px;'>Select Metropolitan Area</h2>", unsafe_allow_html=True)
         
         st.button("Reset to Default", on_click=reset_cities)
