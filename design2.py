@@ -19,7 +19,7 @@ def load_data():
     df = df.fillna(0)
 
     # Price to Income Data Preparation
-    df["Household Income"] = 2.51 * df["Per Capita Income"]
+    df["Household Income"] = 2.54 * df["Per Capita Income"]
     df["Price_Income_Ratio"] = df["median_sale_price"] / df["Household Income"]
 
     
