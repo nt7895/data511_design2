@@ -2,6 +2,16 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+st.markdown(
+    """
+    <style>
+    [data-testid="stVirtualDropdown"] > div {
+        height: auto !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 @st.cache_data(show_spinner="Loading required data...") 
 def load_data():
