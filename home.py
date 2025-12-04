@@ -6,7 +6,7 @@ st.markdown("""
 
     ### 🧮 How Price-to-Income Ratio Works
     - Price-to-Income Ratio = **Median Sale Price ÷ Median Household Income**
-    - Median Household Income = 2.51 * Median Income (Median U.S. houshold size = 2.51)
+    - Median Household Income = 2.54 * Median Income (Median U.S. houshold size = 2.54)
     - Price-to-Income Ratio is divided into 5 levels of affordability:
         - **0.0-3.0:** Affordable
         - **3.1-4.0:** Moderately Unaffordable
